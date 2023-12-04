@@ -1,0 +1,13 @@
+ffmpeg:
+  executable:
+    path: ${FFMPEG_PATH:/usr/bin/ffmpeg}
+ffprobe:
+  executable:
+    path: ${FFPROBE_PATH:/usr/bin/ffprobe}
+
+cloud:
+  aws:
+    region: ${REGION:ap-south-1}
+    awsProfile: ${AWS_PROFILE:default}
+  s3:
+    endpointUrl: ${END_POINT_URL:https://s3-ap-south-1.amazonaws.com}

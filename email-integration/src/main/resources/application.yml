@@ -1,0 +1,20 @@
+mail:
+  imap:
+    ssl: true
+    host: imap.gmail.com
+    port: 993
+    username: "abilashsl2001@gmail.com"
+    password: "lryr pcqp gikm btrk"
+
+spring:
+  task:
+    execution:
+      thread-name-prefix: autohost-task-
+      pool:
+        core-size: 2
+        max-size: 200
+        queue-capacity: 10000
+    scheduling:
+      thread-name-prefix: mail-receiver-
+      pool:
+        size: 2
